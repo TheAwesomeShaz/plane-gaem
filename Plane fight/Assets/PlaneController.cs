@@ -33,7 +33,7 @@ public class PlaneController : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
-        if (!IsOwner) Destroy(this);
+        if (!IsOwner) this.enabled = false;
     }
 
     private void HandlePlayerOneMovementInput()

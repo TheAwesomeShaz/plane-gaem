@@ -134,7 +134,7 @@ MonoBehaviour:
   moveSpeed: 10
   rotateSpeed: 0.2
   bulletPrefab: {fileID: 5158726013100448579, guid: 95c7a1c5240c4c94089ec1ae24f353a7, type: 3}
-  bulletSpawnPosition: {fileID: 0}
+  bulletSpawnPosition: {fileID: 4194320523775664303}
   bulletShootDelay: 0.4
 --- !u!114 &1152697818
 MonoBehaviour:
