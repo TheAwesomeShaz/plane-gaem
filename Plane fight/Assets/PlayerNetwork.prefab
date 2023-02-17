@@ -16,9 +16,10 @@ GameObject:
   - component: {fileID: 1152697813}
   - component: {fileID: 1152697818}
   - component: {fileID: 1152697812}
+  - component: {fileID: 5281511074753019942}
   m_Layer: 0
   m_Name: PlayerNetwork
-  m_TagString: player1
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,8 +133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  rotateSpeed: 0.2
-  bulletPrefab: {fileID: 5158726013100448579, guid: 95c7a1c5240c4c94089ec1ae24f353a7, type: 3}
+  rotateSpeed: 0.3
+  bulletPrefab: {fileID: 5158726013100448579, guid: f2a47a8397182f6429d79ac522e015bd, type: 3}
   bulletSpawnPosition: {fileID: 4194320523775664303}
   bulletShootDelay: 0.4
 --- !u!114 &1152697818
@@ -178,6 +179,19 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &5281511074753019942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4194320522849787098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ed6b8b3f02539419f43e79549a5aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &4194320523596654025
 GameObject:
   m_ObjectHideFlags: 0

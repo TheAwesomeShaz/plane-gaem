@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    int health = 100;
+    public int health = 100;
 
     public void TakeDamage(int damage)
     {

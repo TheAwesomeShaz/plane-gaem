@@ -126,11 +126,11 @@ public class AirPlaneKeyboard : MonoBehaviour
     {
         if (isPlayerOne)
         {
-            GameManager.instance.ShowWin(false);
+            GameManager.instance.ShowWinAccrossNetwork(false);
         }
         else
         {
-            GameManager.instance.ShowWin(true);
+            GameManager.instance.ShowWinAccrossNetwork(true);
         }
 
     }

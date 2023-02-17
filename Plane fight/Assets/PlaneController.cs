@@ -49,7 +49,10 @@ public class PlaneController : NetworkBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            RequestShootServerRPC();
+
             shootBullet();
+
         }
     }
 
@@ -65,6 +68,18 @@ public class PlaneController : NetworkBehaviour
             currentBulletShootDelay = 0;
         }
     }
+
+    [ServerRpc]
+    private void RequestShootServerRPC()
+    {
+        ShootClientRPC();
+    }
+    [ClientRpc] 
+    private void ShootClientRPC()
+    {
+        if(!IsOwner) shootBullet();
+    }
+
 
     private void shootBullet()
     {
@@ -95,6 +110,6 @@ public class PlaneController : NetworkBehaviour
 
     public void Die()
     {    
-        GameManager.instance.ShowWin(false);   
+        GameManager.instance.ShowWinAccrossNetwork(false);   
     }
 }
